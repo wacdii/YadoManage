@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacher.Classmanage.ManageClass">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/layout_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/teal_700"
+            app:layout_constraintTop_toTopOf="parent"
+            app:logo="@drawable/ic_back"
+            app:menu="@menu/menu_class_manage"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="  Thong tin sinh vien">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomnavi"
+            android:layout_marginTop="55dp">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/teal_700"
+            app:itemIconTint="@color/custom_color_bottom_nav"
+            app:itemTextColor="@color/custom_color_bottom_nav"
+            app:menu="@menu/menu_bottom_nav"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

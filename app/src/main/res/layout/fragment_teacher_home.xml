@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bntback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292828"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Lớp của tôi"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="27dp">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/listMH"
+        android:layout_width="365dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:id="@+id/btnthemlopquanly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_btn"
+        android:text="Thêm lớp quản lý"
+        app:backgroundTint="#009688" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yadomanage">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".sharedPreferences.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YadoManage">
+        <activity
+            android:name=".teacher.Classmanage.AddStudent"
+            android:exported="true" />
+        <activity
+            android:name=".student.StudentDetails"
+            android:exported="true" />
+        <activity
+            android:name=".student.StudentDetail"
+            android:exported="true" />
+        <activity
+            android:name=".teacher.Classmanage.ManageClass"
+            android:exported="true" />
+        <activity
+            android:name=".teacher.Classmanage.AddClass"
+            android:exported="true" />
+        <activity
+            android:name=".student.StudentHome"
+            android:exported="true" />
+        <activity
+            android:name=".student.StudentLogin"
+            android:exported="true" />
+        <activity
+            android:name=".teacher.TeacherHome"
+            android:exported="true" />
+        <activity
+            android:name=".teacher.TeacherLogin"
+            android:exported="true" />
+        <activity
+            android:name=".teacher.Teacher"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

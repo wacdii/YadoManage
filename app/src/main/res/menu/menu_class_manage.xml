@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_addstudent"
+        android:title="Thêm sinh viên"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/action_edit"
+        android:title="Nhập điểm"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/action_manage"
+        android:title="Chỉnh sửa thông tin lớp"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/action_delete"
+        android:title="Xoá lớp"
+        app:showAsAction="never">
+
+    </item>
+</menu>

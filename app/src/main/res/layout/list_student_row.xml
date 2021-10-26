@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp">
+
+    <ImageView
+        android:id="@+id/icclass"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_class">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/classid"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/icclass"
+        android:text="Ma lop"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/classname"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classid"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/icclass"
+        android:maxLength="60"
+        android:singleLine="true"
+        android:text="Ten lop"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/icnext"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_next">
+
+    </ImageView>
+
+
+</RelativeLayout>

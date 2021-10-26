@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292828"
+    tools:context=".teacher.Teacher">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/teal_700"
+            app:layout_constraintTop_toTopOf="parent"
+            app:logo="@drawable/ic_back"
+            app:menu="@menu/menu_student_detail"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Thêm sinh viên">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@id/mssv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+        <TextView
+            android:id="@+id/msss"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="MSSV:"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etxtmssv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/msss"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@id/rltht"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mssv"
+        >
+
+        <TextView
+            android:id="@+id/hihi"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="Họ và tên:"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etxtht"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/hihi"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/rltns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rltht">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="Ngày sinh:"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etxtns"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/t1"
+            android:textColor="#FFFFFF">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltsdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rltns">
+
+        <TextView
+            android:id="@+id/hihihi"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="SDT:"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etxtsdt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/hihihi"
+            android:textColor="#FFFFFF">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rltsdt">
+
+        <TextView
+            android:id="@+id/temail"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="Email:"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etxtemail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/temail"
+            android:textColor="#FFFFFF">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltdc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rltemail">
+
+        <TextView
+            android:id="@+id/tff"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="Địa chỉ:"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etxtdiachi"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/tff"
+            android:textColor="#FFFFFF">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rltdc">
+
+        <TextView
+            android:id="@+id/hihihihi"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="Quê quán:"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etxtque"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/hihihihi"
+            android:textColor="#FFFFFF">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="363dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/round_btn"
+        android:text="Thêm"
+        android:textSize="16sp"
+        app:backgroundTint="#009688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rltque" />
+
+    <TextView
+        android:id="@+id/txtlogin2"
+        android:layout_width="102dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Thêm với file"
+        android:textColor="#009688"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rltque" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
