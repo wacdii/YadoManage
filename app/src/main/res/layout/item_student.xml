@@ -7,7 +7,7 @@
     android:layout_marginLeft="10dp"
     android:layout_marginTop="10dp"
 
-    app:cardBackgroundColor="#00BCD4"
+    app:cardBackgroundColor="#40514E"
     app:cardCornerRadius="10dp">
 
     <LinearLayout
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="B1809728"
-            android:textColor="#F3F6F6"
+            android:textColor="#A1B14E"
             android:textSize="13dp">
 
         </TextView>
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="Ngo Quoc Vi"
-            android:textColor="#F3F6F6"
+            android:textColor="#A1B14E"
             android:textSize="15dp">
 
         </TextView>

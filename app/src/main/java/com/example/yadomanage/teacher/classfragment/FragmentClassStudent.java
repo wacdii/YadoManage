@@ -79,11 +79,13 @@ public class FragmentClassStudent extends Fragment {
     }
 
     public void getStudentData(){
+
         manageClass = (ManageClass) getActivity();
         Call<List<Student>> call = ApiClient
                 .getApiClient()
                 .create(ApiInterface.class)
                 .getStudentData(manageClass.getId());
+
         call.enqueue(new Callback<List<Student>>() {
             @Override
             public void onResponse(Call<List<Student>> call, Response<List<Student>> response) {

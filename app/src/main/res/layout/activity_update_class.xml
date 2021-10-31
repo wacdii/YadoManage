@@ -38,37 +38,59 @@
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Mã lớp:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"></TextView>
+
+        <EditText
+            android:id="@+id/malop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:height="48dp"
+            android:editable="false"
             android:hint="Mã lớp"
-            android:height="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:id="@+id/malop">
-        </EditText>
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"></EditText>
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:hint="Tên lớp:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"></TextView>
+
+        <EditText
+            android:id="@+id/tenlop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:height="48dp"
             android:hint="Tên lớp"
-            android:height="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:id="@+id/tenlop">
-        </EditText>
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"></EditText>
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Liên kết tới group Facebook"
-            android:height="48dp"
+            android:hint="Liên kết tới nhóm lớp:"
             android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:id="@+id/linklop">
-        </EditText>
+            android:textColorHint="@color/white"></TextView>
+
+        <EditText
+            android:id="@+id/linklop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:height="48dp"
+            android:hint="Liên kết tới group Facebook"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"></EditText>
 
         <Button
             android:id="@+id/btnupdate"
@@ -76,8 +98,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/round_btn"
-            android:text="Thêm"
-            app:backgroundTint="#009688">
+            android:text="Cập nhật"
+            app:backgroundTint="#327C7B">
 
         </Button>
 

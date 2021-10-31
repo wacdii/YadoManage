@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#03A9F4"
-    tools:context=".teacher.classfragment.FragmentClassNewfeed">
+    android:windowSoftInputMode="adjustPan|adjustResize">
+    <!--    tools:context="net.simplifiedcoding.simplifiedcodingchat.activities.ChatRoomActivity">-->
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="#2D3030"
+        android:orientation="vertical">
+        <!--        android:paddingBottom="@dimen/activity_vertical_margin"-->
+        <!--        android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--        android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--        android:paddingTop="@dimen/activity_vertical_margin">-->
+        <LinearLayout
+            android:id="@+id/ln"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="4">
 
-</FrameLayout>
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="left|top"
+                android:hint="Có gì sắp diễn ra ở lớp vậy?"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:text="Đăng"
+                app:backgroundTint="#4CAF50">
+
+            </Button>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ln"
+            android:layout_marginBottom="0dp"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

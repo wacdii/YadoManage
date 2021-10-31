@@ -85,7 +85,9 @@ public class FragmentTeacherHome extends Fragment {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         Intent intent = new Intent(getActivity(), ManageClass.class);
                         Bundle bundle = new Bundle();
-                        bundle.putString("Key_1",data.get(position).getCid() ); // Truyền một String
+                        bundle.putString("Key_1",data.get(position).getCid()); // Truyền một String
+                        bundle.putString("Key_2",data.get(position).getCname());
+                        bundle.putString("Key_3",data.get(position).getClink());
                         intent.putExtras(bundle);
                         startActivity(intent);
                         //Toast.makeText(getContext(), data.get(position), Toast.LENGTH_LONG).show();

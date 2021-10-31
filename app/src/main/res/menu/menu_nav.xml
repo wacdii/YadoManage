@@ -7,11 +7,11 @@
         </item>
         <item android:id="@+id/nav_stream"
             android:title="@string/nav_stream"
-            android:icon="@drawable/ic_view_stream">
+            android:icon="@drawable/ic_setting">
         </item>
         <item android:id="@+id/nav_history"
             android:title="@string/nav_history"
-            android:icon="@drawable/ic_newfeed">
+            android:icon="@drawable/ic_chat">
         </item>
 
     </group>

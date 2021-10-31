@@ -5,6 +5,7 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.18854166666666666" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/drawable/ic_arrow_right.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/drawable/ic_book.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/drawable/ic_change_password.xml" value="0.26564102564102565" />
         <entry key="app/src/main/res/drawable/ic_chat.xml" value="0.26564102564102565" />
@@ -19,8 +20,14 @@
         <entry key="app/src/main/res/drawable/ic_school.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/drawable/ic_view_stream.xml" value="0.26979166666666665" />
         <entry key="app/src/main/res/drawable/round_btn.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/drawable/table_content_cell_bg.xml" value="0.25092592592592594" />
+        <entry key="app/src/main/res/drawable/table_content_cell_danger.xml" value="0.2046875" />
+        <entry key="app/src/main/res/drawable/table_header_cell_bg.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/layout/activity_add_class.xml" value="0.25364583333333335" />
+        <entry key="app/src/main/res/layout/activity_add_marks.xml" value="0.2351851851851852" />
         <entry key="app/src/main/res/layout/activity_add_student.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_class_view_mark.xml" value="0.20277777777777778" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_manage_class.xml" value="0.17" />
         <entry key="app/src/main/res/layout/activity_student_detail.xml" value="0.18" />
@@ -30,16 +37,19 @@
         <entry key="app/src/main/res/layout/activity_teacher.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_teacher_home.xml" value="0.21770833333333334" />
         <entry key="app/src/main/res/layout/activity_teacher_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_update_class.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/layout/chat_thread.xml" value="0.25364583333333335" />
+        <entry key="app/src/main/res/layout/chat_thread_other.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/content_activity_teacher.xml" value="0.13020833333333334" />
         <entry key="app/src/main/res/layout/fragment_class_chat.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_class_newfeed.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_class_newfeed.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_class_student.xml" value="0.13513513513513514" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.13020833333333334" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.13020833333333334" />
         <entry key="app/src/main/res/layout/fragment_student_add.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/layout/fragment_student_change.xml" value="0.14074074074074075" />
         <entry key="app/src/main/res/layout/fragment_student_home.xml" value="0.23177083333333334" />
-        <entry key="app/src/main/res/layout/fragment_teacher_add.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_teacher_add.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_teacher_change.xml" value="0.16574074074074074" />
         <entry key="app/src/main/res/layout/fragment_teacher_home.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/layout/fragment_teacher_info.xml" value="0.25" />
@@ -51,12 +61,15 @@
         <entry key="app/src/main/res/layout/layout_header_nav.xml" value="0.1" />
         <entry key="app/src/main/res/layout/layout_header_nav2.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/layout/list_class_row.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/list_student_row.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/list_mark_view.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_marks_view.xml" value="0.18854166666666666" />
+        <entry key="app/src/main/res/layout/list_student_row.xml" value="0.2678922487819643" />
+        <entry key="app/src/main/res/layout/newsfeed_layout.xml" value="0.25" />
         <entry key="app/src/main/res/menu/menu_bottom_nav.xml" value="0.1453125" />
         <entry key="app/src/main/res/menu/menu_class_manage.xml" value="0.2388888888888889" />
         <entry key="app/src/main/res/menu/menu_nav.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/menu/menu_nav2.xml" value="0.23177083333333334" />
-        <entry key="app/src/main/res/menu/menu_student_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_student_detail.xml" value="0.22" />
         <entry key="app/src/main/res/menu/menu_test.xml" value="0.14074074074074075" />
       </map>
     </option>

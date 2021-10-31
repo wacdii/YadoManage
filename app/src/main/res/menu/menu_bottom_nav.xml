@@ -12,10 +12,10 @@
         android:icon="@drawable/ic_newfeed">
 
     </item>
-    <item
-        android:id="@+id/action_chat"
-        android:title="@string/action_chat"
-        android:icon="@drawable/ic_chat">
+<!--    <item-->
+<!--        android:id="@+id/action_chat"-->
+<!--        android:title="@string/action_chat"-->
+<!--        android:icon="@drawable/ic_chat">-->
 
-    </item>
+<!--    </item>-->
 </menu>

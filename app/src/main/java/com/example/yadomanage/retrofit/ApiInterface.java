@@ -1,6 +1,11 @@
 package com.example.yadomanage.retrofit;
 
+import com.example.yadomanage.adapter.Marks;
+import com.example.yadomanage.adapter.Mcondition;
+import com.example.yadomanage.adapter.Semester;
 import com.example.yadomanage.adapter.Student;
+import com.example.yadomanage.chat.Message;
+import com.example.yadomanage.newsfeed.Newsfeed;
 import com.example.yadomanage.retrofit.model.ApiResponse;
 import com.example.yadomanage.retrofit.model.ClassModel;
 import com.example.yadomanage.adapter.Class;
@@ -82,6 +87,65 @@ public interface ApiInterface {
             @Field("s_address") String s_address,
             @Field("s_hometown") String s_hometown,
             @Field("s_password") String s_password,
+            @Field("cid") String cid
+    );
+
+    @FormUrlEncoded
+    @POST("displaymarks.php")
+    Call<List<Marks>> showMarks(
+            @Field("cid") String id,
+            @Field("sm_name") String sm_name
+    );
+
+    @FormUrlEncoded
+    @POST("displaysemester.php")
+    Call<List<Semester>> showSemester(
+            @Field("cid") String id
+    );
+
+    @FormUrlEncoded
+    @POST("updateClass.php")
+    Call<ApiResponse> updateClass(
+            @Field("cid") String cid,
+            @Field("c_name") String c_name,
+            @Field("c_link") String c_link
+    );
+
+    @FormUrlEncoded
+    @POST("displayMcondition.php")
+    Call<Mcondition> showMcondition(
+            @Field("tid") int tid
+    );
+
+    @FormUrlEncoded
+    @POST("updateCondition.php")
+    Call<ApiResponse> updateCondition(
+            @Field("tid") int ctid,
+            @Field("avemarks") float ave,
+            @Field("semmarks") float sem,
+            @Field("trainmarks") int train
+    );
+
+    @FormUrlEncoded
+    @POST("displayMessage.php")
+    Call<List<Message>> showMessage(
+            @Field("tid") int tid,
+            @Field("sid") String sid
+    );
+
+    @FormUrlEncoded
+    @POST("addMessage.php")
+    Call<ApiResponse> addMessage(
+            @Field("m_content") String m_content,
+            @Field("sid") String sid,
+            @Field("tid") int tid,
+            @Field("au") String au
+    );
+
+    @FormUrlEncoded
+    @POST("displayNewsfeed.php")
+    Call<List<Newsfeed>> showNewfeed(
+            @Field("tid") int tid,
             @Field("cid") String cid
     );
 }

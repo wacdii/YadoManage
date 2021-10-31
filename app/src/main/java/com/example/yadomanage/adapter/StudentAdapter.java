@@ -54,7 +54,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
         //holder.imgStudent.setImageResource(student.getS_images());
         holder.nameStudent.setText(student.getS_name());
         holder.isStudent.setText(student.getSid());
-        Glide.with(holder.imgStudent.getContext()).load("http://192.168.37.214/yadomanage/image/"+mListStudent.get(position).getS_images()).into(holder.imgStudent);
+        Glide.with(holder.imgStudent.getContext()).load("http://192.168.167.214/yadomanage/image/"+mListStudent.get(position).getS_images()).into(holder.imgStudent);
         holder.layoutItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -16,9 +16,9 @@ import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.myiewholder> {
 
-    List<ClassModel> data;
+    List<Class> data;
 
-    public ListAdapter(List<ClassModel> data) {
+    public ListAdapter(List<Class> data) {
         this.data = data;
     }
 

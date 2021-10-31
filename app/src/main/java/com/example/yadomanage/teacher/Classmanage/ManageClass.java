@@ -29,7 +29,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class ManageClass extends AppCompatActivity {
     ImageView back;
-    String idclass;
+    String idclass,nameclass,linkclass;
     TextView malop;
     BottomNavigationView mNavigationView;
     ViewPager mViewPager;
@@ -47,6 +47,8 @@ public class ManageClass extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
         if (bundle != null) {
             idclass = bundle.getString("Key_1", "");
+            nameclass =bundle.getString("Key_2", "");
+            linkclass =bundle.getString("Key_3", "");
         }
 
 
@@ -67,9 +69,9 @@ public class ManageClass extends AppCompatActivity {
                     case R.id.action_newfeed:
                         mViewPager.setCurrentItem(1);
                         break;
-                    case R.id.action_chat:
-                        mViewPager.setCurrentItem(2);
-                        break;
+//                    case R.id.action_chat:
+//                        mViewPager.setCurrentItem(2);
+//                        break;
 
                 }
                 return true;
@@ -81,10 +83,20 @@ public class ManageClass extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.action_edit:
-                        Toast.makeText(getApplication(),"Item1 clicked",Toast.LENGTH_SHORT).show();
+                        Intent intentmark = new Intent(ManageClass.this,ClassViewMark.class);
+                        Bundle bundlemark = new Bundle();
+                        bundlemark.putString("Key_1",idclass); // Truyền một String
+                        intentmark.putExtras(bundlemark);
+                        startActivity(intentmark);
                         return true;
                     case R.id.action_manage:
-                        Toast.makeText(getApplication(),"Item2 clicked",Toast.LENGTH_SHORT).show();
+                        Intent intenup = new Intent(ManageClass.this,UpdateClass.class);
+                        Bundle bundleup = new Bundle();
+                        bundleup.putString("Key_1",idclass);
+                        bundleup.putString("Key_2",nameclass);
+                        bundleup.putString("Key_3",linkclass);// Truyền một String
+                        intenup.putExtras(bundleup);
+                        startActivity(intenup);
                         return true;
                     case R.id.action_delete:
                         Toast.makeText(getApplication(),"Item3 clicked",Toast.LENGTH_SHORT).show();
@@ -145,9 +157,9 @@ public class ManageClass extends AppCompatActivity {
                         case 1:
                             mNavigationView.getMenu().findItem(R.id.action_newfeed).setChecked(true);
                             break;
-                        case 2:
-                            mNavigationView.getMenu().findItem(R.id.action_chat).setChecked(true);
-                            break;
+//                        case 2:
+//                            mNavigationView.getMenu().findItem(R.id.action_chat).setChecked(true);
+//                            break;
             }
             }
 

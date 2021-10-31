@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.yadomanage.R;
 import com.example.yadomanage.adapter.Student;
+import com.example.yadomanage.chat.Chat;
 import com.example.yadomanage.retrofit.ApiClient;
 import com.example.yadomanage.retrofit.ApiInterface;
 import com.example.yadomanage.retrofit.model.ApiResponse;
@@ -71,14 +72,20 @@ public class StudentDetail extends AppCompatActivity {
         dc.setText(student.getS_address());
         que.setText(student.getS_hometown());
 
-        Glide.with(anh.getContext()).load("http://192.168.37.214/yadomanage/image/"+student.getS_images()).into(anh);
+        Glide.with(anh.getContext()).load("http://192.168.167.214/yadomanage/image/"+student.getS_images()).into(anh);
 
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.action_edit:
-                        Toast.makeText(getApplication(),"Item1 clicked",Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(getApplication(),"Item1 clicked",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(StudentDetail.this, Chat.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("Key_1",student.getSid() ); // Truyền một String
+                        bundle.putString("Key_2",student.getS_name());
+                        intent.putExtras(bundle);
+                        startActivity(intent);
                         return true;
                     case R.id.action_manage:
                         Toast.makeText(getApplication(),"Item2 clicked",Toast.LENGTH_SHORT).show();

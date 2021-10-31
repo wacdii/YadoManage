@@ -1,13 +1,13 @@
 package com.example.yadomanage.teacher.Classmanage;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.example.yadomanage.R;
 import com.example.yadomanage.retrofit.ApiClient;
 import com.example.yadomanage.retrofit.ApiInterface;
 import com.example.yadomanage.retrofit.model.ApiResponse;
 import com.example.yadomanage.sharedPreferences.DataLocalManager;
-import com.example.yadomanage.teacher.Teacher;
-import com.example.yadomanage.teacher.TeacherLogin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,7 +24,8 @@ import retrofit2.Response;
 public class AddClass extends AppCompatActivity {
     TextView cid,cname,clink;
     Button btncreclass;
-    ImageView back;
+    Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,16 +35,16 @@ public class AddClass extends AppCompatActivity {
         cid = findViewById(R.id.malop);
         cname = findViewById(R.id.tenlop);
         clink = findViewById(R.id.linklop);
-        back = findViewById(R.id.icback);
+        toolbar = findViewById(R.id.toolbar);
 
-        back.setOnClickListener(new View.OnClickListener() {
+        toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
 
-        btncreclass= findViewById(R.id.btntaolop);
+        btncreclass= findViewById(R.id.btnupdate);
 
         btncreclass.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -14,8 +14,8 @@
 
 
     <string name="nav_home">Lớp học </string>
-    <string name="nav_stream">Tình hình học tập</string>
-    <string name="nav_history">Bảng tin</string>
+    <string name="nav_stream">Thiết lập cảnh báo</string>
+    <string name="nav_history">Chat</string>
     <string name="nav_my_profile">Chỉnh sửa thông tin </string>
     <string name="nav_change_password">Đổi mật khẩu </string>
 

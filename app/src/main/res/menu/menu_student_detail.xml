@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_edit"
-        android:title="Xem bảng điểm"
+        android:title="Chat"
         app:showAsAction="never">
 
     </item>

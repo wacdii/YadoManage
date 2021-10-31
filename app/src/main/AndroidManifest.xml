@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YadoManage">
         <activity
+            android:name=".chat.Chat"
+            android:exported="true" />
+        <activity
+            android:name=".teacher.Classmanage.UpdateClass"
+            android:exported="true" />
+        <activity
+            android:name=".teacher.Classmanage.ClassViewMark"
+            android:exported="true" />
+        <activity
+            android:name=".teacher.Classmanage.AddMarks"
+            android:exported="true" />
+        <activity
             android:name=".teacher.Classmanage.AddStudent"
             android:exported="true" />
         <activity

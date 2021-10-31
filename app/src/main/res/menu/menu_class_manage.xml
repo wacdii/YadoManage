@@ -9,7 +9,7 @@
     </item>
     <item
         android:id="@+id/action_edit"
-        android:title="Nhập điểm"
+        android:title="Xem điểm"
         app:showAsAction="never">
 
     </item>

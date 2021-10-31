@@ -17,7 +17,6 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
         switch (position){
             case 0: return new FragmentClassStudent();
             case 1: return new FragmentClassNewfeed();
-            case 2: return new FragmentClassChat();
             default: return new FragmentClassStudent();
 
         }
